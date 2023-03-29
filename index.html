@@ -82,8 +82,12 @@ https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage
 	<button onclick="resetCanvas()">Reset Canvas</button>
 	<!--Calls to resetCanvas function from JavaScript-->
 
+	<p> Saved Image </p>
+	<!--Here is the image that will be drawn into the canvas-->
+	<img id="image" src="https://fri.cns.utexas.edu/sites/default/files/uploads/images/default/8.png?auto=format&w=2400&q=50&fit=crop&ar=3:2&crop=entropy" alt="DIY Diagnostics" width="150" height="200">
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
- 	
+ 	</div>
+	
 <script>
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
@@ -97,26 +101,25 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	// (Button 1) Create a function that draws a rectangle onto the canvas.
 		function drawRectangle() {
 			ctx.fillStyle = "black"; //fill style is black
-			ctx.fillRect(30, 30, 50, 50) //dimensions of rectangle
+			ctx.fillRect(30, 30, 50, 50); //dimensions of rectangle
 		}
 
 	// (Button 2) Create a function that writes my name onto the canvas.
 		function printName() {
-
+			ctx.fillText("Ethan Durham", 50, 200); //fills text of my name in the canvas.
 		}
 
 	// (Button 3) Create a function that loads an image onto the canvas.
 		function loadImage() {
-
+			var img = document.getElementById("image");
+			ctx.drawImage(img,0,0,150,200);
 		}
 
 	// (Button 4) Create a button that resets (clears) the canvas.
 		function resetCanvas() {
-
+			c.width = c.width; //clears the canvas display by resetting the canvas width.
 		}
 </script>
-	
-</div>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
