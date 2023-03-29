@@ -52,6 +52,9 @@ https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage
     left: 0vw;
     z-index: 1;
 }
+	canvas {
+		border: 2px solid black;
+	}
 </style>
 
 <body>
@@ -63,7 +66,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage
 	<!--Create canvas-->
 	<br>
 	<p>Canvas</p>
-	<canvas id="myCanvas" width="600" height="400" style="border:1px solid #000000;"></canvas>
+	<canvas id="myCanvas" width="600" height="400" style="border:2px solid #000000;"></canvas>
 	<br>
 	
 	<!--Button 1 (Draw Rectangle)-->
@@ -112,7 +115,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	// (Button 3) Create a function that loads an image onto the canvas.
 		function loadImage() {
 			var img = document.getElementById("image");
-			ctx.drawImage(img,10,25,100,300);
+			ctx.drawImage(img,0,0,500,auto);
 		}
 
 	// (Button 4) Create a button that resets (clears) the canvas.
