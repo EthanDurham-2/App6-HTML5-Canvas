@@ -101,18 +101,18 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	// (Button 1) Create a function that draws a rectangle onto the canvas.
 		function drawRectangle() {
 			ctx.fillStyle = "black"; //fill style is black
-			ctx.fillRect(30, 30, 50, 50); //dimensions of rectangle
+			ctx.fillRect(100, 100, 300, 300); //dimensions of rectangle
 		}
 
 	// (Button 2) Create a function that writes my name onto the canvas.
 		function printName() {
-			ctx.fillText("Ethan Durham", 50, 200); //fills text of my name in the canvas.
+			ctx.fillText("Ethan Durham", 100, 400); //fills text of my name in the canvas.
 		}
 
 	// (Button 3) Create a function that loads an image onto the canvas.
 		function loadImage() {
 			var img = document.getElementById("image");
-			ctx.drawImage(img,0,0,150,200);
+			ctx.drawImage(img,0,0,300,500);
 		}
 
 	// (Button 4) Create a button that resets (clears) the canvas.
